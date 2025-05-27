@@ -1,9 +1,9 @@
-function Nav {
+function Nav () {
     return (
-        <nav>
-            <img src="../public/Little-Lemon-logo-small.jpg"/>
+        <nav id="navbar">
+            <img src="Little-Lemon-logo-small.jpg" width="202" height="76" alt="Little Lemon Logo"/>
 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Menu">Menu</a></li>
@@ -14,3 +14,5 @@ function Nav {
         </nav>
     );
 }
+
+export default Nav;

@@ -1,7 +1,9 @@
-function Header {
+function Header () {
     return (
-        <header>
-            <h1 id="Home">Homepage</h1>
+        <header id="Home">
+            <h1>Little Lemon</h1>
         </header>
     );
 }
+
+export default Header;
