@@ -86,6 +86,10 @@ p {
   color: black;
 }
 
+img {
+  border-radius: 16px;
+}
+
 #navbar {
   display: flex;
   flex-direction: row;

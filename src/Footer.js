@@ -13,6 +13,22 @@ function Footer () {
                     <li><a href="#Login">Login</a></li>
                 </ul>
             </div>
+            <div id="contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Address</li>
+                    <li>Phone number</li>
+                    <li>Email</li>
+                </ul>
+            </div>
+            <div id="social-media">
+                <h4>Social Media Links</h4>
+                <ul>
+                    <li>Address</li>
+                    <li>Phone number</li>
+                    <li>Email</li>
+                </ul>
+            </div>
         </footer>
     );
 }
