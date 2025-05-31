@@ -39,55 +39,85 @@
 
 h1 {
   size: 64px;
-  font: Markazi Text;
+  font-family: 'Markazi Text';
   text-emphasis: medium;
-  color: yellow;
+  color: black;
 }
 
 h2 {
   size: 40px;
-  font: Markazi Text;
+  font-family: 'Markazi Text';
   text-emphasis: medium;
   color: black;
 }
 
 h3 {
   size: 20px;
-  font: Karla;
+  font-family: Karla;
   text-emphasis: extra bold;
   color: black;
 }
 
 h4 {
   size: 18px;
-  font: Karla;
+  font-family: Karla;
   text-emphasis: bold;
   color: black;
 }
 
 h5 {
   size: 18;
-  font: Karla;
+  font-family: Karla;
   text-emphasis: medium;
   color: black;
 }
 
 h6 {
   size: 16px;
-  font: Karla;
+  font-family: Karla;
   text-emphasis: extra bold;
   color: black;
 }
 
 p {
   size: 16px;
-  font: Karla;
+  font-family: Karla;
   text-emphasis: regular;
   color: black;
 }
 
 img {
   border-radius: 16px;
+}
+
+button {
+  border-radius: 16px;
+  background-color: #F4CE14;
+  color: black;
+  font: Karla;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#restaurant-name {
+  color: #F4CE14;
+  font-family: Markazi Text;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+#subtitle {
+  font-family: Markazi Text;
+  font-weight: regular;
+  font-size: 40px;
+  color: white;
+}
+
+#description {
+  font-family: Karla;
+  font-weight: medium;
+  font-size: 18px;
+  color: white;
 }
 
 #navbar {
@@ -128,6 +158,23 @@ img {
 .nav-links li a {
   text-decoration: none;
   color: black;
+}
+
+#hero {
+  background-color: #6E6F6E;
+  display: grid;
+  height: 406px;
+  padding: 5% 5% 0% 5%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr 1fr;
+  gap: 5%;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr 1fr;
+  gap: 5%;
 }
 
 footer {

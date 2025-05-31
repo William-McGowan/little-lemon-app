@@ -1,7 +1,18 @@
+import Header from './Header.js';
+import Nav from './Nav.js';
+import Main from './Main.js';
+import Footer from './Footer.js';
+
 export default function Homepage () {
     return (
         <>
-        <h1 id="Home">Homepage</h1>
+            <Header />
+
+            <Nav />
+
+            <Main />
+
+            <Footer />
         </>
     )
 }
