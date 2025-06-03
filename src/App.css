@@ -97,6 +97,8 @@ button {
   font: Karla;
   font-weight: bold;
   font-size: 18px;
+  width: 200px;
+  height: 60px;
 }
 
 #restaurant-name {
@@ -160,25 +162,90 @@ button {
   color: black;
 }
 
-#hero {
+#Hero {
   background-color: #6E6F6E;
   display: grid;
   height: 406px;
-  padding: 5% 5% 0% 5%;
+  padding: 5% 15% 0% 5%;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 5%;
+}
+
+#specials {
+  padding: 5% 15%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:  "specials-title  specials-title view-menu"
+                        "special special special";
+}
+
+#specials > h2 {
+  grid-area: specials-title;
+}
+
+#specials > button {
+  grid-area: view-menu;
+}
+
+#specials .special {
+  grid-area: special;
+}
+
+#specials > .specialsCard {
+  display: grid;
+  gap: 5%;
+  /**height: 440;
+  width: 265;
+  **/
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40% 20% 30% 10%;
+  grid-template-areas:  "special-photo special-photo special-photo"
+                        "special-name special-price ."
+                        "special-description special-description ."
+                        "order order delivery-icon";
+}
+
+.specialsCard > #special-photo {
+  grid-area: special-photo;
+}
+
+.specialsCard > h2 {
+  grid-area: special-name;
+}
+
+.specialsCard > h3 {
+  grid-area: special-price;
+}
+
+.specialsCard > p {
+  grid-area: special-description;
+}
+
+.specialsCard > h4 {
+  grid-area: order;
+}
+
+.specialsCard #delivery-icon {
+  grid-area: delivery-icon;
 }
 
 #about {
   display: grid;
+  padding: 5% 15%;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:  "h1 img"
+                        "h2 img"
+                        "h4 img";
   gap: 5%;
 }
 
 footer {
   display: flex;
+  background-color: #6E6F6E;
   flex-direction: row;
   gap: 20px;
 }
