@@ -6,9 +6,9 @@ function Nav () {
             <img src="Little-Lemon-logo-small.jpg" width="202" height="76" alt="Little Lemon Logo"/>
 
             <ul className="nav-links">
-                <li><Link to="#home" className="nav-links">Home</Link></li>
-                <li><Link to="#about" className="nav-links">About</Link></li>
-                <li><Link to="#menu" className="nav-links">Menu</Link></li>
+                <li><Link to="./" className="nav-links">Home</Link></li>
+                <li><Link to="./#About" className="nav-links">About</Link></li>
+                <li><Link to="./#Specials" className="nav-links">Menu</Link></li>
                 <li><Link to="./Reservations" className="nav-links">Reservations</Link></li>
                 <li><Link to="./OrderOnline" className="nav-links">Order Online</Link></li>
                 <li><Link to="./Login" className="nav-links">Login</Link></li>

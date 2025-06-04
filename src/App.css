@@ -173,7 +173,7 @@ button {
 }
 
 #specials {
-  padding: 5% 15%;
+  padding: 5% 5%;
   display: grid;
   gap: 5%;
   grid-template-columns: 33% 33% 33%;
@@ -197,9 +197,6 @@ button {
 #specials > .specialsCard {
   display: grid;
   gap: 5%;
-  /**height: 440;
-  width: 265;
-  **/
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 40% 20% 30% 10%;
   grid-template-areas:  "special-photo special-photo special-photo"
@@ -234,20 +231,91 @@ button {
 
 #about {
   display: grid;
-  padding: 5% 15%;
+  padding: 5% 5% 0% 5%;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 2fr;
-  grid-template-areas:  "h1 img"
-                        "h2 img"
-                        "h4 img";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:  "aboutInformation ownerImage1"
+                        "aboutInformation ownerImage2"
+                        "aboutInformation .";
   gap: 5%;
+}
+
+#aboutInformation {
+  grid-area: aboutInformation;
+}
+
+#aboutTitle {
+  grid-area: aboutTitle;
+}
+
+#aboutLocation {
+  grid-area: aboutLocation;
+}
+
+#aboutDescription {
+  grid-area: aboutDescription;
+}
+
+#ownerImage1 {
+  grid-area: ownerImage1;
+}
+
+#ownerImage2 {
+  grid-area: ownerImage2;
+}
+
+#testimonials {
+  background-color: #6E6F6E;
+  padding: 5% 5%;
+  display: grid;
+  gap: 5%;
+  margin-top: 5%;
+  grid-template-columns: repeat(3, 20%);
+  grid-template-areas:  "testimonialTitle testimonialTitle testimonialTitle"
+                        "testimonial testimonial testimonial";
+}
+
+#testimonials > h2 {
+  grid-area: testimonialTitle;
+}
+
+#testimonial {
+  outline: solid black;
+  display: grid;
+  grid-template-columns: 33% 33%;
+  grid-template-areas:  "stars ."
+                        "userPhoto name"
+                        "review review";
+}
+
+#testimonial > #stars {
+  grid-area: stars;
+}
+
+#testimonial > #userPhoto {
+  grid-area: userPhoto;
+}
+
+#testimonial > #name {
+  grid-area: name;
+}
+
+#testimonial > #review {
+  grid-area: review;
 }
 
 footer {
   display: flex;
   background-color: #6E6F6E;
   flex-direction: row;
-  gap: 20px;
+  justify-content: center;
+  gap: 10%;
+  padding: 5%;
+}
+
+footer li {
+  text-decoration-style: none;
+  list-style-type: none;
 }
 
 #footer-nav-links {
@@ -257,12 +325,9 @@ footer {
 
 #footer-nav-links li {
   text-decoration-style: none;
+  list-style-type: none;
   color: black;
   font: Karla;
   text-emphasis: medium;
-}
-
-#footer-nav-links li a {
-  text-decoration-style: none;
-  color: black;
+  justify-content: center;
 }
