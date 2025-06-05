@@ -10,7 +10,7 @@ function Footer () {
                     <li><Link to="./" className="nav-links">Home</Link></li>
                     <li><Link to="./#About" className="nav-links">About</Link></li>
                     <li><Link to="./#Specials" className="nav-links">Menu</Link></li>
-                    <li><Link to="./Reservations" className="nav-links">Reservations</Link></li>
+                    <li><Link to="./Bookings" className="nav-links">Reservations</Link></li>
                     <li><Link to="./OrderOnline" className="nav-links">Order Online</Link></li>
                     <li><Link to="./Login" className="nav-links">Login</Link></li>
                 </ul>

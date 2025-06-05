@@ -13,6 +13,22 @@
   }
 }
 
+@media (max-width: 700px) {
+  .grid-adjustable-columns {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 701px) {
+  .grid-adjustable-columns {
+    width: min(1000px, 75rem);
+    margin: 0 auto;
+    grid-auto-flow: column;
+    gap: 1em;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -165,7 +181,7 @@ button {
 #Hero {
   background-color: #6E6F6E;
   display: grid;
-  height: 406px;
+  height: 451px;
   padding: 5% 15% 0% 5%;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
