@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
+import {useState} from 'react';
 
-export default function BookingForm() {
+export default function BookingForm({availableTimes, dispatch}) {
     const [resDate, setResDate] = useState('');
     const [resTime, setResTime] = useState('');
     const [guests, setGuests] = useState('');
     const [occasion, setOccasion] = useState('');
-    const [availableTimes, setAvailableTimes] = useState([
-        { reservationTime: "17:00", isAvailable: true },
-        { reservationTime: "18:00", isAvailable: true },
-        { reservationTime: "19:00", isAvailable: true },
-        { reservationTime: "20:00", isAvailable: false },
-        { reservationTime: "21:00", isAvailable: true },
-        { reservationTime: "22:00", isAvailable: true }
-    ]);
 
     const handleResDateChange = (event) => {
         setResDate(event.target.value);
+        dispatch({type: event.target.value});
     };
 
     const handleResTimeChange = (event) => {
@@ -44,12 +37,6 @@ export default function BookingForm() {
                     </option>
                 ))
             }
-                {/**<option>17:00</option>
-                <option>18:00</option>
-                <option>19:00</option>
-                <option>20:00</option>
-                <option>21:00</option>
-                <option>22:00</option> **/}
             </select>
             <label for="guests">Number of guests</label>
             <input type="number" value={guests} onChange={handleGuestsChange} placeholder="1" min="1" max="10" id="guests" />
