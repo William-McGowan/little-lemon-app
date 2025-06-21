@@ -6,9 +6,9 @@ import React, { useReducer } from 'react';
 
 
 let date;
-let availableTimes;
+let availableTimes = [];
 
-function initializeTimes() {
+/*export function initializeTimes() {
       return ([
         { reservationTime: "17:00", isAvailable: true},
         { reservationTime: "18:00", isAvailable: true},
@@ -17,9 +17,13 @@ function initializeTimes() {
         { reservationTime: "21:00", isAvailable: true},
         { reservationTime: "22:00", isAvailable: true}
       ])
+}*/
+
+export function initializeTimes() {
+  return (["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"])
 }
 
-  function updateTimes(availableTimes, date) {
+export function updateTimes(availableTimes, date) {
     const updatedTimes = availableTimes.map(availableTime => {
             //if (availableTime.reservationTime === event.target.value) {
             //    return { ...availableTime, isAvailable: false };
@@ -27,7 +31,7 @@ function initializeTimes() {
             return availableTime;
         });
    //     setAvailableTimes(updatedTimes);
-    return [...availableTimes];
+    return [...updatedTimes];
 
   }
 
@@ -53,7 +57,8 @@ function App() {
  //         { reservationTime: "22:00", isAvailable: true}
  // ]);
 
-  const [availableTimes, dispatch] = useReducer(updateTimes, [{reservationTime: "0:00", isAvailable: true}], initializeTimes);
+  const [availableTimes, dispatch] = useReducer(updateTimes, [""], initializeTimes);
+  console.log(availableTimes);
 
   return (
     <>
